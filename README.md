@@ -49,34 +49,36 @@ O projeto foi desenvolvido com foco em **baixo custo, simplicidade e compatibili
 
 ---
 
-# Estrutura do Projeto
+## Estrutura do Projeto
 
+```text
 BibliotecaTEA/
-
+│
 ├── index.html
 ├── style.css
 ├── app.js
 │
 ├── jogos/
-│ │
-│ ├── memoria/
-│ │ ├── index.html
-│ │ ├── memoria.css
-│ │ └── memoria.js
-│ │
-│ ├── cores/
-│ │ ├── index.html
-│ │ ├── cores.css
-│ │ └── cores.js
-│ │
-│ └── emocoes/
-│ ├── index.html
-│ ├── emocoes.css
-│ └── emocoes.js
+│   │
+│   ├── memoria/
+│   │   ├── index.html
+│   │   ├── memoria.css
+│   │   └── memoria.js
+│   │
+│   ├── cores/
+│   │   ├── index.html
+│   │   ├── cores.css
+│   │   └── cores.js
+│   │
+│   └── emocoes/
+│       ├── index.html
+│       ├── emocoes.css
+│       └── emocoes.js
 │
 └── assets/
-├── img/
-└── audio/
+    ├── img/
+    └── audio/
+```
 
 
 ---
