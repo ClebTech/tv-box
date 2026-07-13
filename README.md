@@ -13,3 +13,19 @@ O projeto foi desenvolvido com foco em **baixo custo, simplicidade e compatibili
 
 # Arquitetura do Sistema
 
+                TV Box MXQ Pro 4K
+             Debian 10 + XFCE Desktop
+                       │
+                       ▼
+          Servidor HTTP Local (Python)
+          python3 -m http.server 8000
+                       │
+                       ▼
+          Navegador Chromium (Kiosk Mode)
+                       │
+                       ▼
+          Biblioteca de Jogos Educativos
+                       │
+    ┌──────────────────┼──────────────────┐
+    ▼                  ▼                  ▼
+    Memória        Cores              Emoções
