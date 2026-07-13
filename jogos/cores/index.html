@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Descubra as Cores</title>
+
+    <link rel="stylesheet" href="cores.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>🎨 Descubra as Cores</h1>
+
+        <p class="descricao">
+            Toque na cor indicada abaixo.
+        </p>
+
+    </header>
+
+
+    <section class="painel">
+
+        <div class="info">
+
+            <span>Pontuação</span>
+
+            <strong id="pontuacao">0</strong>
+
+        </div>
+
+        <div class="info">
+
+            <span>Rodada</span>
+
+            <strong id="rodada">1 / 10</strong>
+
+        </div>
+
+    </section>
+
+
+    <section class="pergunta">
+
+        <h2>
+
+            Clique na cor
+
+            <span id="nomeCor">
+                AZUL
+            </span>
+
+        </h2>
+
+    </section>
+
+
+    <section id="tabuleiro" class="tabuleiro">
+
+        <!-- Os botões coloridos serão criados pelo JavaScript -->
+
+    </section>
+
+
+    <section class="mensagem">
+
+        <p id="mensagem"></p>
+
+    </section>
+
+
+    <section class="acoes">
+
+        <button id="reiniciar">
+
+            🔄 Reiniciar
+
+        </button>
+
+        <button id="voltar">
+
+            ⬅ Voltar ao Menu
+
+        </button>
+
+    </section>
+
+</div>
+
+
+<!-- Tela Final -->
+
+<div id="fimJogo" class="fim oculto">
+
+    <div class="janela">
+
+        <h2>🎉 Muito Bem!</h2>
+
+        <p>Você terminou o jogo.</p>
+
+        <p id="resultadoFinal"></p>
+
+        <button id="jogarNovamente">
+
+            Jogar Novamente
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="cores.js"></script>
+
+</body>
+
+</html>

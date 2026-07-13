@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jogo da Memória</title>
+
+    <link rel="stylesheet" href="memoria.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>🧠 Jogo da Memória</h1>
+
+        <div class="painel">
+
+            <div class="info">
+                <span>⏱ Tempo</span>
+                <strong id="tempo">00:00</strong>
+            </div>
+
+            <div class="info">
+                <span>🎯 Jogadas</span>
+                <strong id="jogadas">0</strong>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div id="tabuleiro" class="tabuleiro">
+
+            <!-- As cartas serão criadas automaticamente pelo JavaScript -->
+
+        </div>
+
+    </main>
+
+    <div class="acoes">
+
+        <button id="reiniciar">
+            🔄 Jogar Novamente
+        </button>
+
+        <button id="voltar">
+            ⬅ Voltar ao Menu
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- Tela de vitória -->
+
+<div id="vitoria" class="vitoria oculto">
+
+    <div class="janela">
+
+        <h2>🎉 Parabéns!</h2>
+
+        <p>Você encontrou todos os pares.</p>
+
+        <p id="resultadoFinal"></p>
+
+        <button id="jogarNovamente">
+            Jogar Novamente
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="memoria.js"></script>
+
+</body>
+
+</html>

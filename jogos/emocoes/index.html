@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Reconhecendo Emoções</title>
+
+    <link rel="stylesheet" href="emocoes.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>😊 Reconhecendo Emoções</h1>
+
+        <p class="descricao">
+
+            Observe os rostos e escolha a emoção correta.
+
+        </p>
+
+    </header>
+
+    <section class="painel">
+
+        <div class="info">
+
+            <span>Pontuação</span>
+
+            <strong id="pontuacao">0</strong>
+
+        </div>
+
+        <div class="info">
+
+            <span>Rodada</span>
+
+            <strong id="rodada">1 / 10</strong>
+
+        </div>
+
+        <div class="info">
+
+            <span>Tempo</span>
+
+            <strong id="tempo">30</strong>
+
+        </div>
+
+    </section>
+
+    <section class="pergunta">
+
+        <h2>
+
+            Clique no rosto
+
+            <span id="emocao">
+
+                FELIZ
+
+            </span>
+
+        </h2>
+
+    </section>
+
+    <section
+        id="tabuleiro"
+        class="tabuleiro">
+
+        <!-- Criado pelo JavaScript -->
+
+    </section>
+
+    <section class="mensagem">
+
+        <p id="mensagem"></p>
+
+    </section>
+
+    <section class="acoes">
+
+        <button id="reiniciar">
+
+            🔄 Reiniciar
+
+        </button>
+
+        <button id="voltar">
+
+            ⬅ Voltar ao Menu
+
+        </button>
+
+    </section>
+
+</div>
+
+
+<!-- Tela Final -->
+
+<div
+    id="fimJogo"
+    class="fim oculto">
+
+    <div class="janela">
+
+        <h2>
+
+            🎉 Parabéns!
+
+        </h2>
+
+        <p>
+
+            Você concluiu o jogo.
+
+        </p>
+
+        <p id="resultadoFinal">
+
+        </p>
+
+        <button id="jogarNovamente">
+
+            Jogar Novamente
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="emocoes.js"></script>
+
+</body>
+
+</html>

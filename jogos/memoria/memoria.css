@@ -1,0 +1,341 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:linear-gradient(135deg,#d9f3ff,#9ed9ff);
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+
+    width:95%;
+    max-width:1200px;
+
+}
+
+header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+header h1{
+
+    font-size:48px;
+
+    color:#004d80;
+
+    margin-bottom:20px;
+
+}
+
+/* ===========================
+   PAINEL
+=========================== */
+
+.painel{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+}
+
+.info{
+
+    background:white;
+
+    padding:15px 30px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    min-width:180px;
+
+}
+
+.info span{
+
+    display:block;
+
+    color:#555;
+
+    font-size:18px;
+
+}
+
+.info strong{
+
+    font-size:30px;
+
+    color:#0066aa;
+
+}
+
+/* ===========================
+   TABULEIRO
+=========================== */
+
+.tabuleiro{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,150px);
+
+    gap:20px;
+
+    justify-content:center;
+
+}
+
+/* ===========================
+   CARTA
+=========================== */
+
+.carta{
+
+    width:150px;
+
+    height:150px;
+
+    position:relative;
+
+    cursor:pointer;
+
+    transform-style:preserve-3d;
+
+    transition:transform .5s;
+
+}
+
+.carta.virada{
+
+    transform:rotateY(180deg);
+
+}
+
+.face{
+
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    backface-visibility:hidden;
+
+    font-size:70px;
+
+}
+
+.frente{
+
+    background:white;
+
+    transform:rotateY(180deg);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+}
+
+.verso{
+
+    background:#1f78d1;
+
+    color:white;
+
+    font-size:60px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+   CARTA ENCONTRADA
+=========================== */
+
+.carta.encontrada{
+
+    pointer-events:none;
+
+}
+
+.carta.encontrada .frente{
+
+    background:#a5f3a5;
+
+}
+
+/* ===========================
+   BOTÕES
+=========================== */
+
+.acoes{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+button{
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:12px;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    background:#0077cc;
+
+    color:white;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+    background:#005fa3;
+
+}
+
+/* ===========================
+   TELA DE VITÓRIA
+=========================== */
+
+.vitoria{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.oculto{
+
+    display:none;
+
+}
+
+.janela{
+
+    background:white;
+
+    width:500px;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.3);
+
+}
+
+.janela h2{
+
+    color:#1f78d1;
+
+    margin-bottom:20px;
+
+    font-size:40px;
+
+}
+
+.janela p{
+
+    margin:10px 0;
+
+    font-size:22px;
+
+    color:#555;
+
+}
+
+.janela button{
+
+    margin-top:20px;
+
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media(max-width:900px){
+
+    .tabuleiro{
+
+        grid-template-columns:repeat(4,110px);
+
+    }
+
+    .carta{
+
+        width:110px;
+
+        height:110px;
+
+    }
+
+    .face{
+
+        font-size:50px;
+
+    }
+
+}

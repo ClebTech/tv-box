@@ -1,0 +1,226 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#e8f4ff;
+
+    overflow:hidden;
+
+}
+
+.background{
+
+    position:fixed;
+
+    width:100%;
+    height:100%;
+
+    background:
+
+    radial-gradient(circle at top,#6ec6ff,#cfefff);
+
+    z-index:-1;
+
+}
+
+header{
+
+    text-align:center;
+
+    margin-top:35px;
+
+}
+
+header h1{
+
+    color:#004b87;
+
+    font-size:52px;
+
+}
+
+header p{
+
+    color:#2c3e50;
+
+    margin-top:10px;
+
+    font-size:22px;
+
+}
+
+.cards{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:40px;
+
+    margin-top:80px;
+
+}
+
+.card{
+
+    width:320px;
+
+    height:360px;
+
+    background:white;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 35px rgba(0,0,0,.20);
+
+}
+
+.icone{
+
+    font-size:90px;
+
+    margin-bottom:20px;
+
+}
+
+.card h2{
+
+    color:#004b87;
+
+    margin-bottom:15px;
+
+    font-size:28px;
+
+}
+
+.card p{
+
+    color:#555;
+
+    font-size:20px;
+
+    line-height:1.4;
+
+}
+
+footer{
+
+    position:absolute;
+
+    bottom:20px;
+
+    width:100%;
+
+    text-align:center;
+
+    color:#555;
+
+    font-size:18px;
+
+}
+
+.logo{
+
+    width:120px;
+
+    height:120px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:60px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    margin-bottom:20px;
+
+}
+
+.cadeado{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    font-size:28px;
+
+}
+
+.card{
+
+    position:relative;
+
+}
+
+.bloqueado{
+
+    opacity:.65;
+
+    cursor:not-allowed;
+
+}
+
+.bloqueado:hover{
+
+    transform:none;
+
+}
+
+footer{
+
+    margin-top:60px;
+
+    text-align:center;
+
+    color:#444;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
