@@ -28,4 +28,4 @@ O projeto foi desenvolvido com foco em **baixo custo, simplicidade e compatibili
                        │
     ┌──────────────────┼──────────────────┐
     ▼                  ▼                  ▼
-    Memória        Cores              Emoções
+    Memória          Cores              Emoções
